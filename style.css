@@ -1,6 +1,6 @@
 *{
     margin: 0;
-    padding: 0;
+    padding: 0;   
 }
 
 #principal {
@@ -30,7 +30,7 @@
     width: 1000px;
     margin: 30px auto;
     background-color: aliceblue;
-    font-family:'Times New Roman', Times, serif;
+    font-family:'Times New Roman', Times, serif; 
 }
 
 .navegacion ul{
@@ -42,11 +42,12 @@
     display: inline-block
 }
 
-.menu >li >a{
+.menu >li >a{ /* Software y Hardware menú*/
     display: block;
     padding: 15px 20px;
     color: #353535;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: exo;
     text-decoration: none;
 }
 
@@ -62,7 +63,6 @@
     visibility: hidden;
     opacity: 0;
     transition: opacity 1.5s;
-    
 }
 
 .submenu li a{
@@ -70,6 +70,7 @@
     padding: 15px;
     color: #fff;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: exo;
     text-decoration: none;
 }
 
@@ -78,7 +79,7 @@
     opacity: 1;
 }
 
-/* Aquí empieza la tabla */
+/******* Aquí empieza la tabla ******/
 
 #tabla{
     width: 1000px;
@@ -92,15 +93,12 @@ table{
     table-layout: fixed;
     font-family: sans-serif;
     border-radius: 10px;
-    
-
 }
 
 th, td{
     border: solid 1px gray;
     padding: 25px;
     word-wrap:  break-word;
-    
 }
 
 thead{
@@ -109,16 +107,17 @@ thead{
 }
 
 h1{
-    
-    color:white;
+    color: white;
     font-size: 40px;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: exo;
+    /* font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     */
     background: rgba(123, 98, 0, 0.5);
-    text-align: center;
 
+    text-align: center;
 }
 
-/* el menú de imagenes*/
+/*******el menú de imagenes********/
 
 .container{
     width: 100%;
@@ -128,7 +127,6 @@ h1{
     flex-wrap: wrap;
     justify-content: center;
     margin: auto;
-    
 }
 
 .container .card{
@@ -143,11 +141,9 @@ h1{
     background-color: azure;
 
     font-family: sans-serif;
+    font-family: exo;
     letter-spacing: 0.03em;
-    line-height: 1;
-    
-    
-    
+    line-height: 1;    
 }
 
 .container .card:hover{
@@ -183,12 +179,12 @@ h1{
     align-items: center;
     justify-content: center;
 
-
     width: 100px;
     height: 40px;
     background-color: azure;
     color: black;
     font-family: sans-serif;
+    font-family: exo;
     font-size: 20px;
     font-weight: 500;
     border: none;
@@ -209,5 +205,162 @@ h1{
 
 .dimension{
     width: 1000px;
-    height: 3000px;
+    height: 1300px;
+}
+
+/****************la vista de cada partner****************/
+
+.contenedor{
+    position: relative;
+    width: 1100px ;
+    height: 700px;
+ /*    margin: 240px auto;  */
+    margin: 40px auto;
+    
+}
+
+
+.contenedor .box{
+    position: relative;
+    width: calc(350px - 30px);
+    height: calc(350px - 30px) ;
+    background: rgb(72, 196, 72);
+    float: left;
+    margin: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    text-align: center;
+
+    font-family: sans-serif;
+    font-family: exo;
+}
+
+.contenedor .box .icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+/*     background: rgb(155, 13, 13);  */
+    background: #f00;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+
+.contenedor .box:hover .icon{
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+   /*  border: 80px; */
+    height: 80px;
+    border-radius: 50%;
+}
+
+.contenedor .box .icon .ic{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+    font-size: 100px;
+    color: #fff;
+}
+
+.contenedor .box:hover .icon .ic{
+    /* height:40px; */
+    font-size: 40px;
+}
+
+.contenedor .box .contenido{
+    position: absolute;
+    height: calc(100% - 100px);   
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    top: 100%;
+ /*    top: 120px; */
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.contenedor .box:hover .contenido{
+    top: 100px;
+    opacity: 1;
+    
+}
+
+.contenedor .box .contenido h3{
+    margin: 0 0 10px;
+    padding: 0;
+    color:white;
+    font-size: 24px;
+}
+
+.contenedor .box .contenido p{
+    /* margin: 0; */
+    padding: 0 1rem;
+    color:white;
+    /* no centró :/ */
+    text-align: center;
+    font-weight: 300;
+}
+
+.contenedor .box .contenido ul{
+    /* margin: 0; */
+    padding: 0 1rem;
+    color:white;
+    /* no centró :/ */
+    text-align: center;
+    font-weight: 300;
+}
+
+
+.contenedor .box:nth-child(1) .icon{
+    background: rgb(234, 0, 52);
+}
+
+.contenedor .box:nth-child(1) {
+    background: rgb(224, 0, 52);
+}
+
+.contenedor .box:nth-child(2) .icon{
+    background: rgb(255, 171, 0);
+}
+
+.contenedor .box:nth-child(2) {
+    background: rgb(255, 161, 0);
+}
+
+.contenedor .box:nth-child(3) .icon{
+    background: rgb(73, 156, 53);
+}
+
+.contenedor .box:nth-child(3) {
+    background: rgb(63, 156, 53);
+}
+
+.contenedor .box:nth-child(4) .icon{
+    background: rgb(255, 171, 0);
+}
+
+.contenedor .box:nth-child(4) {
+    background: rgb(255, 161, 0);
+}
+
+.contenedor .box:nth-child(5) .icon{
+    background: rgb(10, 84, 159);
+}
+
+.contenedor .box:nth-child(5) {
+    background: rgb(0, 84, 159);
+}
+
+.contenedor .box:nth-child(6) .icon{
+    background: rgb(234, 0, 52);
+}
+
+.contenedor .box:nth-child(6) {
+    background: rgb(224, 0, 52);
 }
