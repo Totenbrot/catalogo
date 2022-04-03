@@ -1,0 +1,103 @@
+/* *{
+    margin: 0;
+    padding: 0;   
+} */
+
+h1{
+
+    margin: 0;
+    padding: 0; 
+    color: white;
+    font-size: 40px;
+    font-family: exo;
+    background: rgba(123, 98, 0, 0.5);
+    background: rgb(10, 84, 159);
+    text-align: center;
+}
+
+h2{
+    color: rgb(154, 153, 158);
+    
+}
+
+
+table{
+/*     margin: -30px auto; El margen <br> */
+    
+    border-collapse: collapse;
+    font-family: exo;
+    text-align: center;
+    color: rgb(33, 25, 21);
+    font-size:medium;
+    table-layout: fixed;
+
+}
+
+ table,tr,td{
+    border: 5px;
+    height: 185px;
+    width: 250px;
+    padding: 10px;
+
+ }
+
+/*  td{
+     height: 200px;
+     
+ } */
+
+
+table .rojo{
+    border: 5px solid rgb(224, 0, 52);;
+}
+
+
+
+table .amarillo{
+    border: 5px solid rgb(255, 161, 0);
+}
+
+table .azul{
+    border: 5px solid rgb(10, 84, 159);
+}
+
+table .verde{
+    border: 5px solid rgb(63, 158, 42);
+}
+
+
+/* table.center{
+    margin: auto;
+} */
+
+/* El botón de inicio */
+
+.boton {
+    display: inline-flex ;
+    align-items: center;
+    justify-content: center;
+
+    width: 100px;
+    height: 40px;
+    background-color: rgb(10, 84, 159);
+    color: white;
+    font-family: sans-serif;
+    font-family: exo;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all;
+    border-radius: 5px;
+}
+
+.boton:hover {
+    background: gray;
+}
+
+.botones{
+    text-align: center;
+    text-decoration: none;
+}
+
