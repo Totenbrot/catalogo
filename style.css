@@ -112,7 +112,7 @@ h1{
     font-family: exo;
     /* font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
      */
-    background: rgba(123, 98, 0, 0.5);
+ /*    background: rgba(123, 98, 0, 0.5); */
     background: rgb(10, 84, 159, 0.9);
 
     text-align: center;
