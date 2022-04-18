@@ -118,6 +118,13 @@ h1{
     text-align: center;
 }
 
+h2{
+    color: white;
+    font-size: 38px;
+    font-family: exo;
+    text-align: center;
+}
+
 /*******el menú de imagenes********/
 
 .container{
